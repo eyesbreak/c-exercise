@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+	int a=0;
+	int sum=0;
+	int n=0;
+	double avr=0;
+	
+	scanf("%d",&a);
+	
+	while (a!=-1){
+		sum+=a;
+		n++;
+		scanf("%d",&a);
+	}
+	
+	avr=1.0*sum/n;
+	printf("平均数是%f",avr);
+ } 
