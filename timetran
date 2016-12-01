@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+	int utc=0;
+	int bjt=0;
+	
+	printf("请输入一个BJT时间\n");
+	scanf("%d",&bjt);
+	
+	if (bjt>=800){
+		utc=bjt-800;
+	}else{
+		utc=2400+bjt-800;
+	}
+	
+	
+	printf("对应的UTC时间是%d",utc);
+}
+ 	
